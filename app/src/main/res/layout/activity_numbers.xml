@@ -24,10 +24,10 @@
         android:id="@+id/viewFlipper_numbers">
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView"
-            android:src="@drawable/one_j"/>
+            android:src="@drawable/one_j" />
 
         <ImageView
             android:layout_width="match_parent"
