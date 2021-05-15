@@ -4,32 +4,33 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/kidslearningcopy"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/kidslearningcopy"
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningKit">
-        <activity android:name=".PuzzlesActivity"></activity>
-        <activity android:name=".ActionsActivity" />
-        <activity android:name=".FlagsActivity" />
-        <activity android:name=".WeeksActivity" />
-        <activity android:name=".monthsActivity" />
-        <activity android:name=".ShapesActivity" />
-        <activity android:name=".VehiclesActivity" />
-        <activity android:name=".fruitsActivity" />
-        <activity android:name=".BodyPartsActivity" />
-        <activity android:name=".AnimalsActivity" />
-        <activity android:name=".AlphabateActivity" />
-        <activity android:name=".NumbersActivity" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activites.mainActivty.firstScreen.alphabates.Albhabates_Activity2"></activity>
+        <activity android:name=".activites.mainActivity2.secondScreen.PuzzlesActivity" />
+        <activity android:name=".activites.mainActivity2.secondScreen.ActionsActivity" />
+        <activity android:name=".activites.mainActivity2.secondScreen.FlagsActivity" />
+        <activity android:name=".activites.mainActivity2.secondScreen.WeeksActivity" />
+        <activity android:name=".activites.mainActivity2.secondScreen.monthsActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.ShapesActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.VehiclesActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.FruitsActivity" />
+        <activity android:name=".activites.mainActivity2.secondScreen.BodyPartsActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.AnimalsActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.alphabates.AlphabateActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.NumbersActivity" />
+        <activity android:name=".activites.mainActivity2.MainActivity2" />
+        <activity android:name=".activites.mainActivity2.secondScreen.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activites.mainActivty.MainActivity" />
     </application>
 
 </manifest>

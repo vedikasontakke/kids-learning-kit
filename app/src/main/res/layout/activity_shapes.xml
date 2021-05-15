@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".ShapesActivity">
+    tools:context=".activites.mainActivty.firstScreen.NumbersActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEARNING SHAPES"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"/>
+
+    <ViewFlipper
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/viewFlipper_shapes">
+
+        <ImageView
+            android:id="@+id/rectangles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/circle"
+            android:src="@drawable/circle"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/square"
+            android:src="@drawable/squre"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/triangle"
+            android:src="@drawable/triangle"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/oval"
+            android:src="@drawable/oval"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hexagone"
+            android:src="@drawable/hexagone"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/star"
+            android:src="@drawable/star"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/octagon"
+            android:src="@drawable/octagone"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/heart"
+            android:src="@drawable/heart"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pentagone"
+            android:src="@drawable/pentagone"/>
+
+
+    </ViewFlipper>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/left_shape"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/left_button" />
+
+        <ImageView
+            android:id="@+id/play_shape"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/button_play" />
+
+        <ImageView
+            android:id="@+id/right_shape"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/right_button" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

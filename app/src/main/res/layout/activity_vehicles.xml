@@ -1,10 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".VehiclesActivity">
+    tools:context=".activites.mainActivty.firstScreen.VehiclesActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ViewFlipper
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/viewFlipper_vehicle">
+
+        <ImageView
+            android:id="@+id/airplane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/airplanecopy" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bus"
+            android:src="@drawable/buscopy__"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/car"
+            android:src="@drawable/carcopy"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/helicopter"
+            android:src="@drawable/helicopercopy"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/motercycle"
+            android:src="@drawable/motercycle"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ship"
+            android:src="@drawable/shipcopy"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/truck"
+            android:src="@drawable/truck"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/train"
+            android:src="@drawable/traincopy"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/yatch"
+            android:src="@drawable/yachtcopy"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bycycle"
+            android:src="@drawable/bycycle"/>
+
+
+    </ViewFlipper>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEARNING TRANSPORTATIONS"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/left_vehicle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/left_button" />
+
+        <ImageView
+            android:id="@+id/play_vehicle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/button_play" />
+
+        <ImageView
+            android:id="@+id/right_vehicle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/right_button" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

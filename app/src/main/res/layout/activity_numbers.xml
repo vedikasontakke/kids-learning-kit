@@ -6,72 +6,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".NumbersActivity">
+    tools:context=".activites.mainActivty.firstScreen.NumbersActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEARNING NUMBERS"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"/>
 
     <ViewFlipper
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/viewFlipper">
+        android:id="@+id/viewFlipper_numbers">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView"
-            android:src="@drawable/one"/>
+            android:src="@drawable/one_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView2"
-            android:src="@drawable/two"/>
+            android:src="@drawable/two_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView3"
-            android:src="@drawable/three"/>
+            android:src="@drawable/three_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView4"
-            android:src="@drawable/four"/>
+            android:src="@drawable/four_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView5"
-            android:src="@drawable/five"/>
+            android:src="@drawable/five_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView6"
-            android:src="@drawable/sixcopy"/>
+            android:src="@drawable/six_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView7"
-            android:src="@drawable/seven"/>
+            android:src="@drawable/seven_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView8"
-            android:src="@drawable/eight"/>
+            android:src="@drawable/eight_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView9"
-            android:src="@drawable/nine"/>
+            android:src="@drawable/nine_j"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView10"
-            android:src="@drawable/ten"/>
+            android:src="@drawable/ten_j"/>
 
 
     </ViewFlipper>
