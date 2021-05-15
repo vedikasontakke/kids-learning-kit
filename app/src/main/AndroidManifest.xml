@@ -9,8 +9,9 @@
         android:roundIcon="@drawable/kidslearningcopy"
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningKit">
-        <activity android:name=".activites.mainActivty.firstScreen.alphabates.Albhabates_Activity2"></activity>
-        <activity android:name=".activites.mainActivity2.secondScreen.PuzzlesActivity" />
+        <activity android:name=".activites.mainActivty.firstScreen.alphabates.Albhabates_Activity2"/>
+        <activity android:name=".activites.mainActivity2.secondScreen.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
+        <activity android:name=".activites.mainActivity2.secondScreen.puzzles.PuzzlesActivity" />
         <activity android:name=".activites.mainActivity2.secondScreen.ActionsActivity" />
         <activity android:name=".activites.mainActivity2.secondScreen.FlagsActivity" />
         <activity android:name=".activites.mainActivity2.secondScreen.WeeksActivity" />

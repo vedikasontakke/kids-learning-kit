@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kidslearningkit.*
 import com.example.kidslearningkit.activites.mainActivity2.secondScreen.*
+import com.example.kidslearningkit.activites.mainActivity2.secondScreen.puzzles.PuzzlesActivity
 import com.example.kidslearningkit.activites.mainActivty.MainActivity
 import kotlinx.android.synthetic.main.activity_main2.*
 
