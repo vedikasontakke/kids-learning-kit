@@ -21,14 +21,17 @@
     <ViewFlipper
         android:layout_width="400dp"
         android:layout_height="500dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
         android:id="@+id/viewFlipper_actions">
 
         <ImageView
+            android:id="@+id/football"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/football"
-            android:src="@drawable/football"/>
+            android:src="@drawable/football" />
 
         <ImageView
             android:layout_width="match_parent"
