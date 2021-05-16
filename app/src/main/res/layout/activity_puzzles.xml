@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DB9AE6"
+    android:background="@drawable/puzzles_bg"
     tools:context=".tabs.firstTab.FirstTab">
 
     <TextView
@@ -49,16 +49,15 @@
         android:layout_height="150dp"
         android:layout_marginTop="44dp"
         app:cardCornerRadius="20dp"
-        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/lion"/>
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/lionpuzzle_png"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -69,7 +68,6 @@
         android:layout_height="150dp"
         android:layout_marginTop="224dp"
         app:cardCornerRadius="20dp"
-        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +76,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/dog"/>
+            android:src="@drawable/dogpuzzle_png"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -87,8 +85,6 @@
         android:id="@+id/pigeon_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="#DB9AE6"
-        android:backgroundTint="#DB9AE6"
         android:layout_marginTop="44dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,8 +93,8 @@
         app:layout_constraintTop_toBottomOf="@+id/question">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
             android:src="@drawable/peagon_puzzle" />
 
     </androidx.cardview.widget.CardView>
@@ -110,7 +106,6 @@
         android:layout_marginTop="224dp"
         app:cardCornerRadius="20dp"
         android:background="#DB9AE6"
-        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,13 +114,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cat"/>
+            android:src="@drawable/catpuzzle_png"/>
 
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/vehicle_card"
+        android:id="@+id/tiger_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="400dp"
@@ -138,13 +133,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/vehcles"/>
-
+            android:src="@drawable/tigerpuzzle_png"/>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/shape_card"
+        android:id="@+id/monkey_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="400dp"
@@ -157,7 +151,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/shapes"/>
+            android:src="@drawable/peacockpuzzle_png"/>
 
 
     </androidx.cardview.widget.CardView>

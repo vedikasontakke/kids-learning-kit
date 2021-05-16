@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colorful"
+    android:background="@drawable/transparent_bg"
     tools:context=".tabs.firstTab.screens.VehiclesActivity">
 
     <ViewFlipper
         android:layout_width="400dp"
         android:layout_height="500dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:id="@+id/viewFlipper_vehicle">
 
         <ImageView
@@ -94,28 +94,27 @@
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
         android:layout_centerInParent="true"
-        android:layout_margin="30dp"
-        android:padding="20dp">
+       >
 
         <ImageView
             android:id="@+id/left_vehicle"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_margin="4dp"
+            android:layout_margin="6dp"
             android:src="@drawable/left_button" />
 
         <ImageView
             android:id="@+id/play_vehicle"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_margin="4dp"
+            android:layout_margin="6dp"
             android:src="@drawable/button_play" />
 
         <ImageView
             android:id="@+id/right_vehicle"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_margin="4dp"
+            android:layout_margin="6dp"
             android:src="@drawable/right_button" />
 
 

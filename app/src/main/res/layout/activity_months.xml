@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colorful"
-    tools:context=".tabs.secondTab.screens.monthsActivity">
+    android:background="@drawable/months_bg"
+    tools:context=".tabs.secondTab.screens.MonthsActivity">
 
     <TextView
         android:layout_width="match_parent"

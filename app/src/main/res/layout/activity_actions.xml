@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colorful"
+    android:background="@drawable/actions_bg"
     tools:context=".tabs.secondTab.screens.ActionsActivity">
 
     <TextView

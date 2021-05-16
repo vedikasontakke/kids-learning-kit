@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DB9AE6"
+    android:background="@drawable/bgpuzzle1"
     tools:context=".tabs.firstTab.FirstTab">
 
     <TextView

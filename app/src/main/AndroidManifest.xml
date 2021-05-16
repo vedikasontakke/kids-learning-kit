@@ -14,6 +14,8 @@
         <activity android:name=".tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.dogPuzzle.DogPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.monkeyPuzzle.MonkeyPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.tigerPuzzle.TigerPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.PuzzlesActivity" />
         <activity android:name=".tabs.secondTab.screens.ActionsActivity" />
         <activity android:name=".tabs.secondTab.screens.FlagsActivity" />
