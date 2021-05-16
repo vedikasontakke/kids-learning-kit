@@ -64,11 +64,12 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/fruit_card"
+        android:id="@+id/dog_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="224dp"
         app:cardCornerRadius="20dp"
+        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +78,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/fruits"/>
+            android:src="@drawable/dog"/>
 
 
     </androidx.cardview.widget.CardView>

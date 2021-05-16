@@ -13,6 +13,7 @@
         <activity android:name=".tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.dogPuzzle.DogPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.PuzzlesActivity" />
         <activity android:name=".tabs.secondTab.screens.ActionsActivity" />
         <activity android:name=".tabs.secondTab.screens.FlagsActivity" />
