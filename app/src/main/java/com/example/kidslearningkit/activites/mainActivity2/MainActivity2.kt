@@ -7,6 +7,7 @@ import com.example.kidslearningkit.*
 import com.example.kidslearningkit.activites.mainActivity2.secondScreen.*
 import com.example.kidslearningkit.activites.mainActivity2.secondScreen.puzzles.PuzzlesActivity
 import com.example.kidslearningkit.activites.mainActivty.MainActivity
+import com.example.kidslearningkit.utils.move
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class MainActivity2 : AppCompatActivity() {
@@ -28,5 +29,11 @@ class MainActivity2 : AppCompatActivity() {
 
         body_card.setOnClickListener { startActivity(Intent(this , BodyPartsActivity :: class.java)) }
 
+        /**
+        left_Slide_Button.setOnClickListener {
+
+            this.move(MainActivity :: class.java)
+        }
+*/
     }
 }

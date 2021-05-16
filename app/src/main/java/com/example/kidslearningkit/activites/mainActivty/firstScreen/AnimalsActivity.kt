@@ -13,7 +13,6 @@ class AnimalsActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var animalsSongs: ArrayList<Int>
     var count = 0
-
     lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +20,6 @@ class AnimalsActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_animals)
 
         addSongs()
-
         playSongByCount()
 
         play_animal.setOnClickListener {
@@ -51,7 +49,6 @@ class AnimalsActivity : AppCompatActivity(), View.OnClickListener {
         )
     }
 
-
     override fun onClick(v: View) {
         if (v === right_animal) {
             if (count == (animalsSongs.size-1)) {
@@ -61,8 +58,8 @@ class AnimalsActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             playSongByCount()
-
             viewFlipper_animals!!.showNext()
+
         } else if (v === left_animal) {
             if (count == 0) {
                 count = (animalsSongs.size-1)

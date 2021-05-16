@@ -12,7 +12,6 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
 
     lateinit var songsList: ArrayList<Int>
     var count = 0
-
     lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +19,6 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
         setContentView(R.layout.activity_numbers)
 
         addSongs()
-
         playSongByCount()
 
         play_number.setOnClickListener {
@@ -49,7 +47,6 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
         )
     }
 
-
     override fun onClick(v: View) {
         if (v === right_number) {
 
@@ -60,7 +57,6 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
             }
 
             playSongByCount()
-
 
             viewFlipper_numbers!!.showNext()
         } else if (v === left_number) {
@@ -79,8 +75,7 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
             if (mediaPlayer.isPlaying) {
                 mediaPlayer.stop()
             }
-        } catch (e: UninitializedPropertyAccessException) {
-        }
+        } catch (e: UninitializedPropertyAccessException) { }
         mediaPlayer = MediaPlayer.create(this, songsList[count])
         mediaPlayer.start()
     }
