@@ -1,4 +1,4 @@
-package com.example.kidslearningkit.tabs.secondTab.screens.puzzles.lionPuzzle;
+package com.example.kidslearningkit.tabs.secondTab.screens.puzzles.dogPuzzle;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.widget.GridView;
 
 import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity;
 
-public class GestureDetectGridViewLion extends GridView {
+public class GestureDetectGridViewDog extends GridView {
     private GestureDetector gDetector;
     private boolean mFlingConfirmed = false;
     private float mTouchX;
@@ -20,24 +20,24 @@ public class GestureDetectGridViewLion extends GridView {
     private static final int SWIPE_MAX_OFF_PATH = 100;
     private static final int SWIPE_THRESHOLD_VELOCITY = 100;
 
-    public GestureDetectGridViewLion(Context context) {
+    public GestureDetectGridViewDog(Context context) {
         super(context);
         init(context);
     }
 
-    public GestureDetectGridViewLion(Context context, AttributeSet attrs) {
+    public GestureDetectGridViewDog(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public GestureDetectGridViewLion(Context context, AttributeSet attrs, int defStyleAttr) {
+    public GestureDetectGridViewDog(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP) // API 21
-    public GestureDetectGridViewLion(Context context, AttributeSet attrs, int defStyleAttr,
-                                     int defStyleRes) {
+    public GestureDetectGridViewDog(Context context, AttributeSet attrs, int defStyleAttr,
+                                    int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context);
     }
@@ -52,7 +52,7 @@ public class GestureDetectGridViewLion extends GridView {
             @Override
             public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
                                    float velocityY) {
-                final int position = GestureDetectGridViewLion.this.pointToPosition
+                final int position = GestureDetectGridViewDog.this.pointToPosition
                         (Math.round(e1.getX()), Math.round(e1.getY()));
 
                 if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH) {
@@ -61,18 +61,18 @@ public class GestureDetectGridViewLion extends GridView {
                         return false;
                     }
                     if (e1.getY() - e2.getY() > SWIPE_MIN_DISTANCE) {
-                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.up, position);
+                        DogPuzzleActivity.moveTiles(context, DogPuzzleActivity.up, position);
                     } else if (e2.getY() - e1.getY() > SWIPE_MIN_DISTANCE) {
-                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.down, position);
+                        DogPuzzleActivity.moveTiles(context, DogPuzzleActivity.down, position);
                     }
                 } else {
                     if (Math.abs(velocityX) < SWIPE_THRESHOLD_VELOCITY) {
                         return false;
                     }
                     if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE) {
-                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.left, position);
+                        DogPuzzleActivity.moveTiles(context, DogPuzzleActivity.left, position);
                     } else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE) {
-                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.right, position);
+                        DogPuzzleActivity.moveTiles(context, DogPuzzleActivity.right, position);
                     }
                 }
 

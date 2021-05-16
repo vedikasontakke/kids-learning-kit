@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kidslearningkit.R
 import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity
+import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.dogPuzzle.DogPuzzleActivity
 import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity
 import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity
 import com.example.kidslearningkit.utils.move
@@ -17,6 +18,8 @@ class PuzzlesActivity : AppCompatActivity() {
         pigeon_card.setOnClickListener{ this.move(PigeonPuzzleActivity::class.java) }
         lion_card.setOnClickListener{ this.move(LionPuzzleActivity::class.java) }
         cat_card.setOnClickListener{ this.move(CatPuzzleActivity::class.java) }
+        dog_card.setOnClickListener{ this.move(DogPuzzleActivity::class.java) }
+
 
     }
 }
