@@ -11,6 +11,7 @@
         android:theme="@style/Theme.KidsLearningKit">
         <activity android:name=".tabs.firstTab.screens.alphabates.Albhabates_Activity2"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity"/>
         <activity android:name=".tabs.secondTab.screens.puzzles.PuzzlesActivity" />
         <activity android:name=".tabs.secondTab.screens.ActionsActivity" />

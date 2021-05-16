@@ -103,11 +103,13 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/animal_card"
+        android:id="@+id/cat_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="224dp"
         app:cardCornerRadius="20dp"
+        android:background="#DB9AE6"
+        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +118,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/animals"/>
+            android:src="@drawable/cat"/>
 
 
     </androidx.cardview.widget.CardView>
