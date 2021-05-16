@@ -8,7 +8,6 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.GridView;
 
-import com.example.kidslearningkit.tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity;
 
 public class GestureDetectGridViewLion extends GridView {
     private GestureDetector gDetector;
@@ -61,18 +60,18 @@ public class GestureDetectGridViewLion extends GridView {
                         return false;
                     }
                     if (e1.getY() - e2.getY() > SWIPE_MIN_DISTANCE) {
-                        CatPuzzleActivity.moveTiles(context, CatPuzzleActivity.up, position);
+                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.up, position);
                     } else if (e2.getY() - e1.getY() > SWIPE_MIN_DISTANCE) {
-                        CatPuzzleActivity.moveTiles(context, CatPuzzleActivity.down, position);
+                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.down, position);
                     }
                 } else {
                     if (Math.abs(velocityX) < SWIPE_THRESHOLD_VELOCITY) {
                         return false;
                     }
                     if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE) {
-                        CatPuzzleActivity.moveTiles(context, CatPuzzleActivity.left, position);
+                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.left, position);
                     } else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE) {
-                        CatPuzzleActivity.moveTiles(context, CatPuzzleActivity.right, position);
+                        LionPuzzleActivity.moveTiles(context, LionPuzzleActivity.right, position);
                     }
                 }
 
