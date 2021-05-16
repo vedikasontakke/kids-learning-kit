@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kidslearningkit">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/kidslearningcopy"
@@ -9,13 +11,14 @@
         android:roundIcon="@drawable/kidslearningcopy"
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningKit">
-        <activity android:name=".tabs.firstTab.screens.alphabates.Albhabates_Activity2"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.dogPuzzle.DogPuzzleActivity"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.monkeyPuzzle.MonkeyPuzzleActivity"/>
-        <activity android:name=".tabs.secondTab.screens.puzzles.tigerPuzzle.TigerPuzzleActivity"/>
+        <activity android:name=".tabs.otherApps.OtherApps"></activity>
+        <activity android:name=".tabs.firstTab.screens.alphabates.Albhabates_Activity2" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.catPuzzle.CatPuzzleActivity" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.dogPuzzle.DogPuzzleActivity" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.monkeyPuzzle.MonkeyPuzzleActivity" />
+        <activity android:name=".tabs.secondTab.screens.puzzles.tigerPuzzle.TigerPuzzleActivity" />
         <activity android:name=".tabs.secondTab.screens.puzzles.PuzzlesActivity" />
         <activity android:name=".tabs.secondTab.screens.ActionsActivity" />
         <activity android:name=".tabs.secondTab.screens.FlagsActivity" />

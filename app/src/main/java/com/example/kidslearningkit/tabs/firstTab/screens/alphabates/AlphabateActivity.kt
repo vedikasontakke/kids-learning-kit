@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kidslearningkit.R
+import kotlinx.android.synthetic.main.activity_albhabates_2.*
 import kotlinx.android.synthetic.main.activity_alphabate.*
 
 class AlphabateActivity : AppCompatActivity() {
@@ -15,8 +16,10 @@ class AlphabateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alphabate)
 
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        right_albhabate.setOnClickListener { startActivity(Intent(this , Albhabates_Activity2 :: class.java)) }
+        val intent = Intent(this , Albhabates_Activity2 :: class.java)
+
+        right_albhabate.setOnClickListener { startActivity(intent) }
+
 
         var music_A : MediaPlayer? = MediaPlayer.create(this, R.raw.a)
         var music_B : MediaPlayer? = MediaPlayer.create(this, R.raw.b)

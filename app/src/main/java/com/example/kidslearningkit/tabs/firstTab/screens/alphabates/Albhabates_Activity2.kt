@@ -6,14 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kidslearningkit.R
 import kotlinx.android.synthetic.main.activity_albhabates_2.*
+import kotlinx.android.synthetic.main.activity_alphabate.*
 
 class Albhabates_Activity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_albhabates_2)
 
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        left_albhabate.setOnClickListener { startActivity(Intent(this , AlphabateActivity :: class.java)) }
+        left_albhabate.setOnClickListener {   onBackPressed()  }
 
         val music_N : MediaPlayer? = MediaPlayer.create(this, R.raw.n)
         val music_O : MediaPlayer? = MediaPlayer.create(this, R.raw.o)
