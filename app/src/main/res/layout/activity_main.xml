@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DB9AE6"
-    tools:context=".activites.mainActivty.MainActivity">
+    tools:context=".tabs.firstTab.FirstTab">
 
     <TextView
         android:id="@+id/textView"

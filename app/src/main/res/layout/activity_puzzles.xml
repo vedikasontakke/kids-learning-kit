@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DB9AE6"
-    tools:context=".activites.mainActivty.MainActivity">
+    tools:context=".tabs.firstTab.FirstTab">
 
     <TextView
         android:id="@+id/textView"
@@ -44,11 +44,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/alphabate_card"
+        android:id="@+id/lion_card"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="44dp"
         app:cardCornerRadius="20dp"
+        android:backgroundTint="#DB9AE6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +58,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/albhabates"/>
+            android:src="@drawable/lion"/>
 
 
     </androidx.cardview.widget.CardView>

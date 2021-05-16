@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.mainActivity2.secondScreen.SplashActivity">
+    tools:context=".tabs.secondTab.splash.SplashActivity">
 
     <ImageView
         android:id="@+id/ic_logo"

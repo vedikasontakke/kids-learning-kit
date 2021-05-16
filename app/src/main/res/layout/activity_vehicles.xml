@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".activites.mainActivty.firstScreen.VehiclesActivity">
+    tools:context=".tabs.firstTab.screens.VehiclesActivity">
 
     <ViewFlipper
         android:layout_width="400dp"

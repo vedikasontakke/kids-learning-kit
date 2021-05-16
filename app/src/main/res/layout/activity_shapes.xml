@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".activites.mainActivty.firstScreen.NumbersActivity">
+    tools:context=".tabs.firstTab.screens.NumbersActivity">
 
     <TextView
         android:layout_width="match_parent"

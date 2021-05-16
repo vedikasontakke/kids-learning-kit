@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.kidslearningkit.activites.mainActivity2.secondScreen.puzzles.piesonPuzzle.GestureDetectGridView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.kidslearningkit.tabs.secondTab.screens.puzzles.piesonPuzzle.GestureDetectGridView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/grid_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kidslearningkit.activites.mainActivity2.secondScreen.puzzles.piesonPuzzle.PigeonPuzzleActivity" />
+    tools:context="com.example.kidslearningkit.tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity" />

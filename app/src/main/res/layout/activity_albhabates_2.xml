@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".activites.mainActivty.firstScreen.alphabates.Albhabates_Activity2">
+    tools:context=".tabs.firstTab.screens.alphabates.Albhabates_Activity2">
 
     <TextView
         android:layout_width="match_parent"

@@ -9,29 +9,30 @@
         android:roundIcon="@drawable/kidslearningcopy"
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningKit">
-        <activity android:name=".activites.mainActivty.firstScreen.alphabates.Albhabates_Activity2"/>
-        <activity android:name=".activites.mainActivity2.secondScreen.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
-        <activity android:name=".activites.mainActivity2.secondScreen.puzzles.PuzzlesActivity" />
-        <activity android:name=".activites.mainActivity2.secondScreen.ActionsActivity" />
-        <activity android:name=".activites.mainActivity2.secondScreen.FlagsActivity" />
-        <activity android:name=".activites.mainActivity2.secondScreen.WeeksActivity" />
-        <activity android:name=".activites.mainActivity2.secondScreen.monthsActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.ShapesActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.VehiclesActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.FruitsActivity" />
-        <activity android:name=".activites.mainActivity2.secondScreen.BodyPartsActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.AnimalsActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.alphabates.AlphabateActivity" />
-        <activity android:name=".activites.mainActivty.firstScreen.NumbersActivity" />
-        <activity android:name=".activites.mainActivity2.MainActivity2" />
-        <activity android:name=".activites.mainActivity2.secondScreen.SplashActivity">
+        <activity android:name=".tabs.firstTab.screens.alphabates.Albhabates_Activity2"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.piesonPuzzle.PigeonPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.lionPuzzle.LionPuzzleActivity"/>
+        <activity android:name=".tabs.secondTab.screens.puzzles.PuzzlesActivity" />
+        <activity android:name=".tabs.secondTab.screens.ActionsActivity" />
+        <activity android:name=".tabs.secondTab.screens.FlagsActivity" />
+        <activity android:name=".tabs.secondTab.screens.WeeksActivity" />
+        <activity android:name=".tabs.secondTab.screens.MonthsActivity" />
+        <activity android:name=".tabs.firstTab.screens.ShapesActivity" />
+        <activity android:name=".tabs.firstTab.screens.VehiclesActivity" />
+        <activity android:name=".tabs.firstTab.screens.FruitsActivity" />
+        <activity android:name=".tabs.secondTab.screens.BodyPartsActivity" />
+        <activity android:name=".tabs.firstTab.screens.AnimalsActivity" />
+        <activity android:name=".tabs.firstTab.screens.alphabates.AlphabateActivity" />
+        <activity android:name=".tabs.firstTab.screens.NumbersActivity" />
+        <activity android:name=".tabs.secondTab.SecondTab" />
+        <activity android:name=".tabs.secondTab.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activites.mainActivty.MainActivity" />
+        <activity android:name=".tabs.firstTab.FirstTab" />
     </application>
 
 </manifest>

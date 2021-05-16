@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".activites.mainActivity2.secondScreen.BodyPartsActivity">
+    tools:context=".tabs.secondTab.screens.BodyPartsActivity">
 
     <TextView
         android:layout_width="match_parent"

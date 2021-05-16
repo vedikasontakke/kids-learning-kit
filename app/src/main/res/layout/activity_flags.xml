@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/colorful"
-    tools:context=".activites.mainActivity2.secondScreen.FlagsActivity">
+    tools:context=".tabs.secondTab.screens.FlagsActivity">
 
     <TextView
         android:layout_width="match_parent"
