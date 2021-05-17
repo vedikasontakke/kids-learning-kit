@@ -9,9 +9,14 @@ import kotlinx.android.synthetic.main.activity_albhabates_2.*
 import kotlinx.android.synthetic.main.activity_alphabate.*
 
 class Albhabates_Activity2 : AppCompatActivity() {
+
+     var mediaPlayer: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_albhabates_2)
+
+
 
         left_albhabate.setOnClickListener {   onBackPressed()  }
 
@@ -29,19 +34,36 @@ class Albhabates_Activity2 : AppCompatActivity() {
         val music_Y : MediaPlayer? = MediaPlayer.create(this, R.raw.y)
         val music_Z : MediaPlayer? = MediaPlayer.create(this, R.raw.z)
 
-        alphabate_N.setOnClickListener { music_N?.start() }
-        alphabate_O.setOnClickListener { music_O?.start() }
-        alphabate_P.setOnClickListener { music_P?.start() }
-        alphabate_Q.setOnClickListener { music_Q?.start() }
-        alphabate_R.setOnClickListener { music_R?.start() }
-        alphabate_S.setOnClickListener { music_S?.start() }
-        alphabate_T.setOnClickListener { music_T?.start() }
-        alphabate_U.setOnClickListener { music_U?.start() }
-        alphabate_V.setOnClickListener { music_V?.start() }
-        alphabate_W.setOnClickListener { music_W?.start() }
-        alphabate_X.setOnClickListener { music_X?.start() }
-        alphabate_Y.setOnClickListener { music_Y?.start() }
-        alphabate_Z.setOnClickListener { music_Z?.start() }
+        alphabate_N.setOnClickListener { playSong(R.raw.n) }
+        alphabate_O.setOnClickListener { playSong(R.raw.o) }
+        alphabate_P.setOnClickListener { playSong(R.raw.p) }
+        alphabate_Q.setOnClickListener { playSong(R.raw.q) }
+        alphabate_R.setOnClickListener { playSong(R.raw.r) }
+        alphabate_S.setOnClickListener { playSong(R.raw.s) }
+        alphabate_T.setOnClickListener { playSong(R.raw.t) }
+        alphabate_U.setOnClickListener { playSong(R.raw.u) }
+        alphabate_V.setOnClickListener { playSong(R.raw.v) }
+        alphabate_W.setOnClickListener { playSong(R.raw.w) }
+        alphabate_X.setOnClickListener { playSong(R.raw.x) }
+        alphabate_Y.setOnClickListener { playSong(R.raw.y) }
+        alphabate_Z.setOnClickListener { playSong(R.raw.z) }
+
+    }
+
+    private fun playSong(rawfile: Int) {
+        if (mediaPlayer == null){
+            mediaPlayer = MediaPlayer.create(this, rawfile)
+            mediaPlayer?.start()
+        }else if(mediaPlayer != null){
+            if (mediaPlayer?.isPlaying == true) {
+                mediaPlayer?.reset()
+                mediaPlayer?.release()
+            }
+            mediaPlayer = MediaPlayer.create(this, rawfile)
+            mediaPlayer?.start()
+
+        }
+
 
     }
 

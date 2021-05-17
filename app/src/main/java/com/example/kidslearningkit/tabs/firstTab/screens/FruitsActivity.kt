@@ -93,7 +93,6 @@ class FruitsActivity : AppCompatActivity() , View.OnClickListener {
                 }catch (e:IllegalStateException){
                     Log.e(TAG, "playSongByCount: RESET -- 1", )
                 }
-
                 try {
                     mediaPlayer.release()
                 } catch (e: UninitializedPropertyAccessException) {
