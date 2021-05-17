@@ -10,7 +10,8 @@ import kotlinx.android.synthetic.main.activity_alphabate.*
 
 class AlphabateActivity : AppCompatActivity() {
 
-    lateinit var mediaPlayer: MediaPlayer
+    var mediaPlayer: MediaPlayer? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,25 +20,6 @@ class AlphabateActivity : AppCompatActivity() {
         val intent = Intent(this, Albhabates_Activity2::class.java)
 
         right_albhabate.setOnClickListener { startActivity(intent) }
-
-        mediaPlayer = MediaPlayer.create(this, R.raw.alphabates)
-        mediaPlayer.start()
-
-
-        var music_A: MediaPlayer? = MediaPlayer.create(this, R.raw.a)
-        var music_B: MediaPlayer? = MediaPlayer.create(this, R.raw.b)
-        var music_C: MediaPlayer? = MediaPlayer.create(this, R.raw.c)
-        var music_D: MediaPlayer? = MediaPlayer.create(this, R.raw.d)
-        var music_E: MediaPlayer? = MediaPlayer.create(this, R.raw.e)
-        var music_F: MediaPlayer? = MediaPlayer.create(this, R.raw.f)
-        var music_G: MediaPlayer? = MediaPlayer.create(this, R.raw.g)
-        var music_H: MediaPlayer? = MediaPlayer.create(this, R.raw.h)
-        var music_I: MediaPlayer? = MediaPlayer.create(this, R.raw.i)
-        var music_J: MediaPlayer? = MediaPlayer.create(this, R.raw.j)
-        var music_K: MediaPlayer? = MediaPlayer.create(this, R.raw.k)
-        var music_L: MediaPlayer? = MediaPlayer.create(this, R.raw.l)
-        var music_M: MediaPlayer? = MediaPlayer.create(this, R.raw.m)
-
 
         alphabate_A.setOnClickListener { playSong(R.raw.a) }
         alphabate_B.setOnClickListener { playSong(R.raw.b) }
@@ -57,12 +39,14 @@ class AlphabateActivity : AppCompatActivity() {
     }
 
     private fun playSong(rawfile: Int) {
-        if (mediaPlayer.isPlaying) {
-            mediaPlayer.reset()
-            mediaPlayer.release()
+        if(mediaPlayer != null){
+            mediaPlayer?.pause()
+            mediaPlayer?.release()
         }
+
         mediaPlayer = MediaPlayer.create(this, rawfile)
-        mediaPlayer.start()
+        mediaPlayer?.start()
+
     }
 
 

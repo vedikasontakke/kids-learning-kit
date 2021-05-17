@@ -1,6 +1,7 @@
 package com.example.kidslearningkit.tabs.firstTab.screens.alphabates
 
 import android.content.Intent
+import android.media.AudioManager
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_alphabate.*
 
 class Albhabates_Activity2 : AppCompatActivity() {
 
-     var mediaPlayer: MediaPlayer? = null
+    var mediaPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,21 +19,8 @@ class Albhabates_Activity2 : AppCompatActivity() {
 
 
 
-        left_albhabate.setOnClickListener {   onBackPressed()  }
+        left_albhabate.setOnClickListener { onBackPressed() }
 
-        val music_N : MediaPlayer? = MediaPlayer.create(this, R.raw.n)
-        val music_O : MediaPlayer? = MediaPlayer.create(this, R.raw.o)
-        val music_P : MediaPlayer? = MediaPlayer.create(this, R.raw.p)
-        val music_Q : MediaPlayer? = MediaPlayer.create(this, R.raw.q)
-        val music_R : MediaPlayer? = MediaPlayer.create(this, R.raw.r)
-        val music_S : MediaPlayer? = MediaPlayer.create(this, R.raw.s)
-        val music_T : MediaPlayer? = MediaPlayer.create(this, R.raw.t)
-        val music_U : MediaPlayer? = MediaPlayer.create(this, R.raw.u)
-        val music_V : MediaPlayer? = MediaPlayer.create(this, R.raw.v)
-        val music_W : MediaPlayer? = MediaPlayer.create(this, R.raw.w)
-        val music_X : MediaPlayer? = MediaPlayer.create(this, R.raw.x)
-        val music_Y : MediaPlayer? = MediaPlayer.create(this, R.raw.y)
-        val music_Z : MediaPlayer? = MediaPlayer.create(this, R.raw.z)
 
         alphabate_N.setOnClickListener { playSong(R.raw.n) }
         alphabate_O.setOnClickListener { playSong(R.raw.o) }
@@ -51,19 +39,13 @@ class Albhabates_Activity2 : AppCompatActivity() {
     }
 
     private fun playSong(rawfile: Int) {
-        if (mediaPlayer == null){
-            mediaPlayer = MediaPlayer.create(this, rawfile)
-            mediaPlayer?.start()
-        }else if(mediaPlayer != null){
-            if (mediaPlayer?.isPlaying == true) {
-                mediaPlayer?.reset()
-                mediaPlayer?.release()
-            }
-            mediaPlayer = MediaPlayer.create(this, rawfile)
-            mediaPlayer?.start()
-
+        if(mediaPlayer != null){
+            mediaPlayer?.pause()
+            mediaPlayer?.release()
         }
 
+        mediaPlayer = MediaPlayer.create(this, rawfile)
+        mediaPlayer?.start()
 
     }
 
