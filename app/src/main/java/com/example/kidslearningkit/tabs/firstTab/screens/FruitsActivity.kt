@@ -15,7 +15,6 @@ class FruitsActivity : AppCompatActivity() , View.OnClickListener {
     private  val TAG = "xFruitsActivity"
     lateinit var songsList: ArrayList<Int>
     var count = 0
-
     lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,6 @@ class FruitsActivity : AppCompatActivity() , View.OnClickListener {
         setContentView(R.layout.activity_fruits)
 
         addSongs()
-
 
         right_fruit!!.setOnClickListener(this)
         left_fruit!!.setOnClickListener(this)

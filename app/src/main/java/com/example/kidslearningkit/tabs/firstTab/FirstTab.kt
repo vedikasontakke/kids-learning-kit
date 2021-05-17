@@ -38,7 +38,6 @@ class FirstTab : AppCompatActivity() {
         question.setOnClickListener {
             this.move(OtherApps::class.java)
         }
-
     }
 
     override fun onStart() {

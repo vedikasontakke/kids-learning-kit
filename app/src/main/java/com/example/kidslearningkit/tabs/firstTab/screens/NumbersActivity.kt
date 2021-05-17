@@ -3,11 +3,15 @@ package com.example.kidslearningkit.tabs.firstTab.screens
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.kidslearningkit.R
 import kotlinx.android.synthetic.main.activity_numbers.*
+import java.lang.IllegalStateException
 
 class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
+
+    private  val TAG = "xNumbersActivity"
 
     lateinit var songsList: ArrayList<Int>
     var count = 0
@@ -18,6 +22,14 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
         setContentView(R.layout.activity_numbers)
 
         addSongs()
+
+        right_number!!.setOnClickListener(this)
+        left_number!!.setOnClickListener(this)
+    }
+
+    override fun onStart() {
+        super.onStart()
+
         playSongByCount()
 
         play_number.setOnClickListener {
@@ -27,8 +39,6 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
             playSongByCount()
         }
 
-        right_number!!.setOnClickListener(this)
-        left_number!!.setOnClickListener(this)
     }
 
     private fun addSongs() {
@@ -55,27 +65,72 @@ class NumbersActivity : AppCompatActivity() ,  View.OnClickListener {
                 count++
             }
 
-            playSongByCount()
+          //  playSongByCount()
 
-            viewFlipper_numbers!!.showNext()
+            viewFlipper_numbers!!.showNext().also {
+
+                playSongByCount()
+
+            }
         } else if (v === left_number) {
             if (count == 0) {
                 count = (songsList.size-1)
             } else {
                 count--
             }
-            playSongByCount()
-            viewFlipper_numbers!!.showPrevious()
+            viewFlipper_numbers!!.showPrevious().also {
+
+                playSongByCount()
+
+            }
         }
     }
 
     private fun playSongByCount() {
         try {
             if (mediaPlayer.isPlaying) {
-                mediaPlayer.stop()
+                try{
+                    mediaPlayer.reset()
+                }catch (e:UninitializedPropertyAccessException){
+                    Log.e(TAG, "playSongByCount: RESET -- 1", )
+                }catch (e: IllegalStateException){
+                    Log.e(TAG, "playSongByCount: RESET -- 1", )
+                }
+
+                try {
+                    mediaPlayer.release()
+                } catch (e: UninitializedPropertyAccessException) {
+                    Log.e(TAG, "playSongByCount: RELEASE", )
+                }catch (e: IllegalStateException){
+                    Log.e(TAG, "playSongByCount: RELEASE", )
+                }
             }
-        } catch (e: UninitializedPropertyAccessException) { }
-        mediaPlayer = MediaPlayer.create(this, songsList[count])
-        mediaPlayer.start()
+        } catch (e: UninitializedPropertyAccessException) {
+            Log.e(TAG, "playSongByCount: Is Activity Started Then media Player is Not Initialize", )
+        }
+        try {
+            mediaPlayer.release()
+        }catch (e:java.lang.Exception){
+            Log.e(TAG, "playSongByCount: RELEASE - 2", )
+        }
+        try {
+
+            mediaPlayer = MediaPlayer.create(this, songsList[count])
+            mediaPlayer.start()
+
+        }catch(e:java.lang.Exception) {
+            Log.e(TAG, "playSongByCount: Playing new song error ${e}", )
+        }
+
+        Log.e(TAG, "playSongByCount: Media Play song with $count", )
     }
-}
+
+    override fun onStop() {
+        super.onStop()
+        try {
+            mediaPlayer.release()
+            mediaPlayer.stop()
+        } catch (e: Exception) {
+
+        }
+    }}
