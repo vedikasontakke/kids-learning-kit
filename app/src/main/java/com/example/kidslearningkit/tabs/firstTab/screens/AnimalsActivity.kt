@@ -20,12 +20,12 @@ class AnimalsActivity : AppCompatActivity(), View.OnClickListener {
         addSongs()
         playSongByCount()
 
-        play_animal.setOnClickListener {
-           playSongByCount()
-        }
-        viewFlipper_animals.setOnClickListener{
-            playSongByCount()
-        }
+            play_animal.setOnClickListener {
+               playSongByCount()
+            }
+            viewFlipper_animals.setOnClickListener{
+                playSongByCount()
+            }
 
 
         right_animal!!.setOnClickListener(this)

@@ -3,12 +3,13 @@ package com.example.kidslearningkit.tabs.secondTab.screens
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.kidslearningkit.R
 import kotlinx.android.synthetic.main.activity_actions.*
 
 class ActionsActivity : AppCompatActivity(), View.OnClickListener{
-
+    private  val TAG = "ActionsActivity"
     lateinit var songsList: ArrayList<Int>
     var count = 0
     lateinit var mediaPlayer: MediaPlayer
@@ -16,6 +17,10 @@ class ActionsActivity : AppCompatActivity(), View.OnClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actions)
+    }
+
+    override fun onStart() {
+        super.onStart()
 
         addSongs()
         playSongByCount()
@@ -27,9 +32,9 @@ class ActionsActivity : AppCompatActivity(), View.OnClickListener{
             playSongByCount()
         }
 
-
         right_actions!!.setOnClickListener(this)
         left_actions!!.setOnClickListener(this)
+
     }
 
     private fun addSongs() {
@@ -76,6 +81,8 @@ class ActionsActivity : AppCompatActivity(), View.OnClickListener{
                 mediaPlayer.stop()
             }
         } catch (e: UninitializedPropertyAccessException) { }
+
+        Log.e(TAG, "playSongByCount: PlaySong count ${count}", )
         mediaPlayer = MediaPlayer.create(this, songsList[count])
         mediaPlayer.start()
     }}
